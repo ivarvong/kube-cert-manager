@@ -29,7 +29,7 @@ The `kube-cert-manager` requires persistent storage to hold the following data:
 * Let's Encrypt issued certificates
 
 Create a persistent disk which will store the `kube-cert-manager` database.
-> [boltdb](https://github.com/boltdb/bolt) is used to persistent data.
+> [boltdb](https://github.com/boltdb/bolt) is used to persist data.
 
 ```
 gcloud compute disks create kube-cert-manager --size 10GB
